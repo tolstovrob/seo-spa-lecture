@@ -107,6 +107,8 @@
     )
   ])
   set page(numbering: "1")
+
+  show heading.where(level: 1): set block(above: 1.75em, below: 1em)
   
   content
 }
