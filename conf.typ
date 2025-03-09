@@ -71,9 +71,8 @@
   content
 ) = {
   show raw: set text(
-    font: "JetBrains Mono",
-    ligatures: false,
-    features: (calt: 0)
+    font: "JetBrainsMono NF",
+    ligatures: true
   )
 
   show raw.where(block: true): code => {
@@ -95,7 +94,7 @@
   set text(
     font: "Cambria",
     size: 14pt,
-    ligatures: false,
+    ligatures: true,
   )
 
   make_titlepage(info: meta)
