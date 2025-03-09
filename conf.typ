@@ -80,7 +80,7 @@
 			context {
         let t = text(fill: gray)[#line.number]
         t
-        h(1em - measure(t).width)
+        h(2em - measure(t).width)
       }
       line.body
     }
