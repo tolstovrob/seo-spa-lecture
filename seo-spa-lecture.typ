@@ -306,6 +306,27 @@ export default function Post({ post }) {
 
 Вот собственно и всё. Это очень простой и проверенный годами способ.
 
+А если вы используете SSR, то рекомендуется использовать обновлённый форк `react-helmet-async`:
+
+```tsx
+import { HelmetProvider } from 'react-helmet-async';
+
+// some code
+const app = (
+  <HelmetProvider>
+    <App>
+      <Helmet>
+        <title>LogRocket Blog</title>
+        <link rel="canonical" href="https://www.logrocket.com/" />
+      </Helmet>
+      <h1>Home for top notch frontend developer content</h1>
+    </App>
+  </HelmetProvider>
+);
+```
+
+Обратите внимание на то, что вам придётся обернуть компонент дополнительно в специальный провайдер.
+
 == React 19
 
 В новейшем обновлении React была добавлена встроенная поддержка динамических мета-тегов. Наш код выше можно переписать так:
